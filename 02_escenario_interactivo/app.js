@@ -1,7 +1,7 @@
 
 const pardo = document.getElementById("pardo");
 pardo.addEventListener("click", () => {
-  alert("¡Hola! Soy Pardo 🐻");
+  alert("¡Hola! Soy Pardo ");
 });
 
 const panda = document.getElementById("panda");
