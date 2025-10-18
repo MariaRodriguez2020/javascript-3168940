@@ -1,11 +1,75 @@
 body {
-    background-color: rgb(106, 42, 5);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+  background-color: rgb(207, 173, 154);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
 }
 
-img {
-    width: 750px
-    height: 500px;
+.main-img {
+  width: 750px;
+  height: 500px;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.oso {
+  position: absolute;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.pardo {
+  top: 320px;
+  left: 160px;
+}
+
+.panda {
+  top: 320px;
+  left: 325px;
+}
+
+.polar {
+  top: 320px;
+  left: 490px;
+}
+
+.oso:hover {
+  transform: scale(1.1);
+}
+.roca {
+  position: absolute;
+  width: 120px;
+  top: 400px;
+  left: 270px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nube {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 120px;
+  animation: moverNube 20s linear infinite;
+}
+
+@keyframes moverNube {
+  0% { left: 0; }
+  100% { left: 650px; }
+}
+
+.sol {
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  width: 90px;
+  animation: brillarSol 3s ease-in-out infinite alternate;
+}
+
+@keyframes brillarSol {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(10px); }
 }
