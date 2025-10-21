@@ -53,12 +53,36 @@ body {
   top: 100px;
   left: 0;
   width: 120px;
-  animation: moverNube 20s linear infinite;
+  animation: moverNube 2s linear infinite alternate; 
 }
 
+#contador.activo {
+  transform: scale(1.1);
+}
+
+#contador {
+  width: 130px;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: rgb(203, 230, 122);
+  border: 3px solid rgb(14, 138, 57);
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(15, 15, 14);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+  top: 320px;
+  left: 180px;
+}
+
+
 @keyframes moverNube {
-  0% { left: 0; }
-  100% { left: 650px; }
+  0%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
 }
 
 .sol {
@@ -66,10 +90,24 @@ body {
   top: 50px;
   left: 600px;
   width: 90px;
-  animation: brillarSol 3s ease-in-out infinite alternate;
+  animation:moverSol 2s linear infinite alternate; 
 }
 
-@keyframes brillarSol {
-  0% { transform: translateY(0px); }
-  100% { transform: translateY(10px); }
+@keyframes moverSol {
+  0%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
 }
+
+@keyframes salto {
+  0%{transform: translateY(0); opacity: 1;}
+  30%{transform: translateY(-60px);}
+  100%{transform: translateY(0); opacity: 0;}
+
+}
+ .saltar {
+  animation: salto 0.5s ease forwards;
+ }
