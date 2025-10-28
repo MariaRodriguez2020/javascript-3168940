@@ -184,7 +184,40 @@ body {
   animation:moverSol 2s linear infinite alternate; 
 }
 
-/*escenario 3*/
+@keyframes moverOne {
+  0%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+
+@keyframes moverOne1 {
+  0%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes salto {
+  0%{transform: translateY(0); opacity: 1;}
+  30%{transform: translateY(-60px);}
+  100%{transform: translateY(0); opacity: 0;}
+
+}
+ .saltar {
+  animation: salto 0.5s ease forwards;
+ }
+
+
+.escena{display: none;}
+.activa{
+  display: inline-block;
+}
 
 
 
