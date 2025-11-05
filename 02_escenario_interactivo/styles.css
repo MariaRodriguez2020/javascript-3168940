@@ -65,7 +65,7 @@ body {
   margin: 15px auto;
   padding: 10px;
   background-color: rgb(203, 230, 122);
-  border: 3px solid rgb(14, 138, 57);
+  border: 3px solid rgb(167, 116, 45);
   border-radius: 10px;
   text-align: center;
   color: rgb(15, 15, 14);
@@ -214,11 +214,77 @@ body {
  }
 
 
-.escena{display: none;}
-.activa{
-  display: inline-block;
+ /*carrusel*/
+
+
+
+.escena {
+  display: none;
 }
 
+
+.escena.activa {
+  display: block;
+}
+
+
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.anterior, .siguiente {
+  background-color: rgb(237, 218, 167);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.anterior:hover, .siguiente:hover {
+  background-color: rgb(225, 186, 78);
+  transform: scale(1.05);
+}
+
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.miniatura {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid violet;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.miniaturaUno {
+  background-image: url('fondo.webp'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.miniaturaDos {
+  background-image: url('fondoo2.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.miniaturaTres {
+  background-image: url('paisaje.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
 
 
 
