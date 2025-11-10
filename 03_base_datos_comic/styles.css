@@ -1,0 +1,110 @@
+/* ====== ESTILO GENERAL ====== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: linear-gradient(to right, #1a1a2e, #11111f);
+color: #fff;
+min-height: 100vh;
+}
+
+/* ====== HEADER ====== */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: rgba(20, 20, 40, 0.8);
+backdrop-filter: blur(6px);
+}
+
+header .logo h1 {
+font-size: 1.8rem;
+color: #a86cf5;
+letter-spacing: 2px;
+}
+
+nav {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+gap: 15px;
+}
+
+nav ul li a {
+color: #ddd;
+text-decoration: none;
+font-size: 0.95rem;
+transition: color 0.3s;
+}
+
+nav ul li a:hover {
+color: #a86cf5;
+}
+
+/* ====== PORTADA ====== */
+.portada {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 80px 60px;
+flex-wrap: wrap;
+}
+
+.portada .info {
+max-width: 600px;
+}
+
+.portada h2 {
+font-size: 3rem;
+color: #fff;
+letter-spacing: 1px;
+}
+
+.portada .detalle {
+color: #aaa;
+margin: 10px 0;
+}
+
+.portada .sinopsis {
+font-size: 1.1rem;
+margin: 20px 0;
+color: #ddd;
+max-width: 500px;
+}
+
+.portada button {
+background-color: #a86cf5;
+color: #fff;
+border: none;
+padding: 10px 18px;
+margin-right: 10px;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.portada button:hover {
+background-color: #c18aff;
+}
+
+/* ====== CAPÍTULOS (solo título, por ahora) ====== */
+.capitulos {
+padding: 60px;
+text-align: center;
+}
+
+.capitulos h3 {
+color: #a86cf5;
+font-size: 1.8rem;
+margin-bottom: 20px;
+}
