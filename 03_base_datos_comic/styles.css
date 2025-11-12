@@ -1,111 +1,175 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-background-color: #0b0b0b;
-color: white;
-font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
 .hero {
-position: relative;
-height: 100vh;
-background-image: url('fondo-naranja.jpg'); 
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-padding: 100px;
+  position: relative;
+  height: 70vh;
+  background-image: url('headerr.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px;
 }
 
 .overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .hero-content {
-position: relative;
-max-width: 600px;
-z-index: 2;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
 .hero h1 {
-font-size: 4rem;
-color: #fff;
-margin-bottom: 20px;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.hero p {
-font-size: 1.1rem;
-line-height: 1.6;
-margin-bottom: 30px;
+.sinopsis {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
+
+.Genero {
+  font-size: 2rem;
+  color: #e7dcdc;
+  margin-bottom: 5px;
+  font-weight: 500px;
+}
+
 
 .buttons button {
-background-color: #6c4cff;
-border: none;
-color: white;
-padding: 12px 24px;
-margin-right: 10px;
-border-radius: 6px;
-cursor: pointer;
-transition: 0.3s;
+  background-color: #DFAC13;
+  border: none;
+  color: rgb(1, 1, 1);
+  padding: 14px 30px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
 }
 
 .buttons button:hover {
-background-color: #5638d3;
+  background-color: #d4b65c;
 }
 
 .buttons .secondary {
-background-color: transparent;
-border: 2px solid #6c4cff;
+  background-color: transparent;
+  border: 2px solid #d4b65c;
 }
 
 /* CAPÍTULOS */
 .chapters {
-padding: 60px 80px;
+  padding: 80px 80px;
 }
 
 .chapters h2 {
-font-size: 2rem;
-margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .chapter-list {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .chapter {
-width: 250px;
-background-color: #1a1a1a;
-border-radius: 10px;
-overflow: hidden;
-transition: 0.3s;
+  width: 320px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
 }
 
 .chapter:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .chapter img {
-width: 100%;
-height: 150px;
-object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .chapter h3 {
-padding: 10px;
-font-size: 1rem;
-color: #fff;
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #fff;
 }
 
+.resumen {
+  display: none;
+  padding: 0 15px 20px 15px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* PERSONAJES */
+.characters {
+  padding: 80px;
+  background-color: #111;
+}
+
+.characters h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.character-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.character {
+  width: 300px;
+  text-align: center;
+}
+
+.character img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.character h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.character p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
