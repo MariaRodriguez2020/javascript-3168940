@@ -1,35 +1,33 @@
 let comic = {
-    {
-        {
+    
+        
   "nombreComic": "Aluna",
   "numeroEpisodios": "tres",
-  "genero": ficcion,
+  "genero": "ficcion",
   "sinopsos": "Super tower",
-  "autores": maria fernanda, juan david,
-  "capitulos": [tres
+  "autores": ["mariafernanda, juandavid",]
+
+  "capitulos": [
     {
       "nombre": "el llamado del mar",
-      "personajes": [carlos vives, carlos vives niño],
+      "personajes": ["carlosvives, carlosvivesniño"],
       "portada": "",
-      "descripcion": ["Radiation resistance", "Turning tiny", "Radiation blast"]
+      "descripcion": ["Radiation resistance", "Turning tiny", "Radiation blast"],
     },
     {
       "nombre": "ecos del camino",
-      "personajes": [carlos vives, carlos vives niño,]
+      "personajes": ["carlosvives, carlosvivesniño"],
       "portada": "Jane Wilson",
       "descripcion": [
       ]
     },
     {
       "nombre": "despertar",
-      "personajes": [carlos vives, carlos vives niño],
+      "personajes": ["carlosvives, carlosvivesniño"],
       "portada": "Unknown",
       "descripcion": [
         
-      ]
+      ],
     }
   ]
-}
-    },
-    {},
-}
+  }
