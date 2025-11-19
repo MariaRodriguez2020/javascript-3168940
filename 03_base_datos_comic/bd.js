@@ -3,9 +3,9 @@ let comic = {
         
   "nombreComic": "Aluna",
   "numeroEpisodios": "tres",
-  "genero": "ficcion",
-  "sinopsos": "Super tower",
-  "autores": ["mariafernanda, juandavid",]
+  "genero": "fantasia",
+  "sinopsis": "“Carlos Vives se sumerge en un viaje con su yo de 10 años donde la música lo inspira a seguir su carrera de artista y lo ayuda a enfrentar sus inseguridades.”",
+  "autores": ["maria fernanda, juan david",],
 
   "capitulos": [
     {

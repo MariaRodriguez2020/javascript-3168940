@@ -1,9 +1,29 @@
-const infocomic= document.querySelector (".infocomic")
+const infocomic = document.querySelector('.info-comic');
 
-console.log(infocomic)
+console.log(infocomic);
 
-infocomic.innerHTML = 
-   `<small>${infocomic.year}2025</small>
-    <h1>${comic.nombreComic}Titulo del comic</h1>
-    <p>${comic.sinopsis}sinopsis</p>
-    <p>Genero: ${comic.genero}Fantasia</p>`
+infocomic.innerHTML = `
+
+    <small>${comic.year}</small>
+    <h1>${comic.nombreComic}</h1>
+    <p>${comic.sinopsis}</p>
+    <p>genero:${comic.genero}</p>
+
+    
+    `
+    
+    console.log(comic.personajes);
+
+    comic.personajes.forEach( char => {
+        //crear elementos dinamicamente con javascript
+        const div = document.createElement('div');
+        div.classList.add('personaje');
+        div.innerHTML = `
+        <img"${char.imagen}" alt"">
+        <p>${char.nombre}</p>
+        <p>${char.descripcion}</p>
+        
+        `
+        cardPersonaje.appendiChild(div)
+        
+    });
