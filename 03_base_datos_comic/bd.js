@@ -1,5 +1,5 @@
 let comic = {
-  "year": "2025",
+  "año": "2025",
   "nombreComic": "vovi a nacer",
   "numeroEpisodios": "1",
   "genero": "introspectivo",
@@ -17,7 +17,7 @@ let comic = {
     {
       "nombre": "carlos niño",
       "descripcion":"Representa la inocencia, la inspiración y el amor puro por la música. Es la voz interior que guía al adulto.",
-      "imagen":"./niño.png",
+      "imagen":"./carlos niño.png",
     }
   ],
   "capitulos": [,
@@ -26,7 +26,7 @@ let comic = {
       "class": 1,
       "name": "el llamdo del mar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./bruma.png"],
+      "portada": ["./CAPITULO 1.png"],
       "year": "2025",
       "capitulos": "1",
       "descripcion": "Carlos descubre un portal que lo lleva a revivir su niñez y reencontrarse con su esencia musical."
@@ -35,7 +35,7 @@ let comic = {
       "id": 2,
       "name": "ecos del camino",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./ciudad.png"],
+      "portada": ["./CAPITULO 2.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "El joven Carlos enfrenta sus miedos y comprende la importancia de su legado familiar"
@@ -45,7 +45,7 @@ let comic = {
       "id": 3,
       "name": "el despeertar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./concierto.png"],
+      "portada": ["./capitulo 3.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "Ambos Carlos, el niño y el adulto, se reconcilian para crear juntos una nueva melodía de vida"
