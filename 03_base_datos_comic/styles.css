@@ -81,24 +81,24 @@ body {
 }
 
 /* CAPÍTULOS */
-.chapters {
+.capitulos {
   padding: 80px 80px;
 }
 
-.chapters h2 {
+.capitulos h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.chapter-list {
+.capitulo-list {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.chapter {
+.capitulo {
   width: 320px;
   background-color: #1a1a1a;
   border-radius: 12px;
@@ -108,17 +108,17 @@ body {
   position: relative;
 }
 
-.chapter:hover {
+.capitulo:hover {
   transform: scale(1.05);
 }
 
-.chapter img {
+.capitulo img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.chapter h3 {
+.capitulo h3 {
   padding: 15px;
   font-size: 1.1rem;
   color: #fff;

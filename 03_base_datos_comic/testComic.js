@@ -1,8 +1,8 @@
-const infocomic = document.querySelector('.info-comic');
-
+const infocomic = document.querySelector('.infoComic');
+const cardPersonajes = document.querySelector('.personajes-container');
 console.log(infocomic);
 
-infocomic.innerHTML = `
+/* infocomic.innerHTML = `
 
     <small>${comic.year}</small>
     <h1>${comic.nombreComic}</h1>
@@ -13,17 +13,34 @@ infocomic.innerHTML = `
     `
     
     console.log(comic.personajes);
-
+ */
     comic.personajes.forEach( char => {
         //crear elementos dinamicamente con javascript
-        const div = document.createElement('div');
-        div.classList.add('personaje');
+        const div = document.createElement('class');
+        div.classList.add('personajes');
         div.innerHTML = `
-        <img"${char.imagen}" alt"">
-        <p>${char.nombre}</p>
+        <img src="${char.imagen}"  alt="">
+        <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>
-        
+    
         `
-        cardPersonaje.appendiChild(div)
-        
-    });
+        cardPersonajes.appendChild(div);
+    })
+
+// CAPITULOS //
+
+
+const cardCapitulos = document.querySelector('.cards');
+
+comic.capitulos.forEach( char => {
+        //crear elementos dinamicamente con javascript
+        const div = document.createElement('div');
+        div.classList.add('card');
+        div.innerHTML = `
+        <img src="${char.portada}"  alt="">
+        <h3>${char.name}</h3>
+        <p>${char.descripcion}</p>
+    
+        `
+        cardCapitulos.appendChild(div);
+    })
