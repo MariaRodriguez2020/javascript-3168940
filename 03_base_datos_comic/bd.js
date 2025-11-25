@@ -26,7 +26,7 @@ let comic = {
       "class": 1,
       "name": "el llamdo del mar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./CAPITULO 1.png"],
+      "portada": ["./CAPITULO1.png"],
       "year": "2025",
       "capitulos": "1",
       "descripcion": "Carlos descubre un portal que lo lleva a revivir su niñez y reencontrarse con su esencia musical."
@@ -35,7 +35,7 @@ let comic = {
       "id": 2,
       "name": "ecos del camino",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./CAPITULO 2.png"],
+      "portada": ["./CAPITULO2.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "El joven Carlos enfrenta sus miedos y comprende la importancia de su legado familiar"
@@ -45,7 +45,7 @@ let comic = {
       "id": 3,
       "name": "el despeertar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["./capitulo 3.png"],
+      "portada": ["./capitulo3.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "Ambos Carlos, el niño y el adulto, se reconcilian para crear juntos una nueva melodía de vida"
