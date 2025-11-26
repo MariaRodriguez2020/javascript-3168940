@@ -1,4 +1,5 @@
-let comic = {
+export let comic = {
+
   "año": "2025",
   "nombreComic": "vovi a nacer",
   "numeroEpisodios": "1",
@@ -20,6 +21,7 @@ let comic = {
       "imagen":"./carlos niño.png",
     }
   ],
+  
   "capitulos": [,
   
     {

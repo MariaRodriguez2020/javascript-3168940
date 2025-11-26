@@ -1,3 +1,5 @@
+import { comic } from "./bd.js";
+
 /* const infocomic = document.querySelector('.infocomic'); */
 const personajes = document.querySelector('.personaje-list');
 
@@ -24,30 +26,15 @@ comic.capitulos.forEach( cap => {
         const div = document.createElement('div');
         div.classList.add('capitulo');
         div.innerHTML = `
+        <a href ="capitulos.html?id=${cap.id}">
         <img src="${cap.portada}"  alt="">
         <h3>${cap.name}</h3>
         <p>${cap.descripcion}</p>
+        a/>
         `
       capitulos.appendChild(div);
     })
 
 
 
-comic.capitulo. forEach(cap => {
-const div = document.createElement ('div');
-div.classList.add ('capitulos');
-div.innerHTML = `
-<div class="capitulo">
-<div class=" imagen">
-<img src="${CAPITULO1.png}" alt="Capítulo 1"></ing>
-</div>
-<div class="detalles-capitulo">
-<h3>${cap.nombre}</h3>
-<p»${cap.descripcion}</p>
-<p class="personajes"><strong>Personajes:</strong> $(cap-personaje)</p»
-<a href="capitulos.html"><button class="vercapitulo">ver capitulo</button></a
-</div>
-`;
-capitulos.appendChild(div);
 
-} );
