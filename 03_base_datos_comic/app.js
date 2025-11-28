@@ -24,6 +24,7 @@ console.log(capitulos);
 comic.capitulos.forEach( cap => {
         //crear elementos dinamicamente con javascript
         const div = document.createElement('div');
+        console.log (cap.id)
         div.classList.add('capitulo');
         div.innerHTML = `
         <a href ="capitulos.html?id=${cap.id}">

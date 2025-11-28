@@ -25,7 +25,7 @@ export let comic = {
   "capitulos": [,
   
     {
-      "class": 1,
+      "id": 1,
       "name": "el llamdo del mar",
       "personajes": "carlos vives y carlos niño" ,
       "portada": ["./CAPITULO1.png"],
