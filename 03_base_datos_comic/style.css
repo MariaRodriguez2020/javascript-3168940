@@ -1,0 +1,59 @@
+/* ========================
+    ESTILOS INDEX
+   ======================== */
+
+:root {
+  --cafe-oscuro: #2a1f1a;
+  --cafe-medio: #4e392f;
+  --cafe-claro: #d9c2a3;
+  --beige: #f5e6d3;
+}
+
+body {
+  background: var(--beige);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+.banner-imagen {
+  width: 100%;
+  height: 250px;
+  background: var(--cafe-claro);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* CORRECCIÓN: Usar clases en lugar de IDs para el grid */
+.capitulos-list,
+.personaje-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.capitulo,
+.personaje {
+  background: var(--cafe-claro);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: .2s;
+}
+
+.capitulo img,
+.personaje img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.capitulo:hover,
+.personaje:hover {
+  transform: translateY(-5px);
+}
