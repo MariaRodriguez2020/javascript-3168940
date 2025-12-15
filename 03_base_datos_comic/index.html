@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALUNA - Cómic Interactivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALUNA - Cómic Interactivo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>ALUNA</h1>
-      <p class="sinopsis">“Carlos Vives se sumerge en un viaje con su yo de 10 años donde la música lo inspira a seguir su carrera de artista y lo ayuda a enfrentar sus inseguridades.”</p>
-      <p class="Genero">Genero: Fantasia</p>
-      <div class="buttons">
-        <button>Leer Cómic</button>
-        <button class="secondary">Agregar a Favoritos</button>
-      </div>
-    </div>
-  </header>
+  
+  <nav class="barra">
+    <div class="contenedor-barra">
+      <div class="logo">ALUNA</div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#capitulos">Capítulos</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="capitulos">
-    <h2>Capítulos</h2>
-    <div class="capitulos-list">
-         </div> 
-  </section>
+  
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>ALUNA</h1>
+      <p class="sinopsis">“Carlos Vives se sumerge en un viaje con su yo de 10 años donde la música lo inspira a seguir su carrera de artista y lo ayuda a enfrentar sus inseguridades.”</p>
+      <p class="Genero">Género: Fantasía</p>
+      <div class="buttons">
+        <a href="capitulos.html" class="boton principal">Leer Cómic</a>
+        <button class="boton secundario">Agregar a Favoritos</button>
+      </div>
+    </div>
+  </header>
 
-    <section class="personajes">
-    <h2>Personajes Principales</h2>
-    <div class="personaje-list">
-      </div>
-  
-       <script type="module" src="app.js"></script>
+  
+  <section id="capitulos" class="capitulos">
+    <h2>Capítulos</h2>
+    <div class="capitulos-list">
+      
+    </div>
+  </section>
 
-  
+  
+  <section id="personajes" class="personajes">
+    <h2>Personajes Principales</h2>
+    <div class="personaje-list">
+      
+    </div>
+  </section>
+
+  <script type="module" src="app.js"></script>
 </body>
 </html>

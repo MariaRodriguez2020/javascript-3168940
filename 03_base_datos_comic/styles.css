@@ -1,175 +1,189 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #0b0b0b;
-  color: white;
-  font-family: 'Poppins', sans-serif;
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* HEADER */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EFE6D8;
+  color: #3E2723;
+  line-height: 1.6;
+  opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+
+
+.barra {
+  background-color: #3E2723;
+  padding: 15px 50px;
+}
+
+.contenedor-barra {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  color: #FAF8F5;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #FAF8F5;
+  font-size: 1rem;
+}
+
+/* ===== HERO ===== */
 .hero {
   position: relative;
-  height: 70vh;
-  background-image: url('headerr.png'); 
+  height: 80vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 100px;
+  animation: cambiarFondo 12s infinite; 
+
+}
+
+@keyframes cambiarFondo {
+  0%   { background-image: url('imgcarrusel/carrusel1.jpg'); }
+  33%  { background-image: url('imgcarrusel/carrusel2.jpg'); }
+  66%  { background-image: url('imgcarrusel/carrusel3.jpg'); }
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  max-width: 650px;
+  padding-left: 80px;
+  color: #FAF8F5;
 }
 
-.hero h1 {
-  font-size: 5rem;
-  color: #fff;
+.hero-content h1 {
+  font-size: 3.2rem;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 .sinopsis {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .Genero {
-  font-size: 2rem;
-  color: #e7dcdc;
-  margin-bottom: 5px;
-  font-weight: 500px;
+  margin-bottom: 25px;
 }
 
-
-.buttons button {
-  background-color: #DFAC13;
-  border: none;
-  color: rgb(1, 1, 1);
-  padding: 14px 30px;
-  margin-right: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 1rem;
-}
-
-.buttons button:hover {
-  background-color: #d4b65c;
-}
-
-.buttons .secondary {
-  background-color: transparent;
-  border: 2px solid #d4b65c;
-}
-
-/* CAPÍTULOS */
-.capitulos {
-  padding: 80px 80px;
-}
-
-.capitulos h2 {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.capitulo-list {
+/* ===== BOTONES ===== */
+.buttons {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.capitulo {
-  width: 320px;
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
-  cursor: pointer;
-  position: relative;
-}
-
-.capitulo:hover {
-  transform: scale(1.05);
-}
-
-.capitulo img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.capitulo h3 {
-  padding: 15px;
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-.resumen {
-  display: none;
-  padding: 0 15px 20px 15px;
+.boton {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
   font-size: 0.95rem;
-  color: #ccc;
 }
 
-/* PERSONAJES */
-.personajes {
-  padding: 80px;
-  background-color: #111;
+.principal {
+  background-color: #6D7F5A;
+  color: rgb(36, 11, 3);
 }
 
-.personajes h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
+.secundario {
+  border: 2px solid #310b04;
+  color: #310b04;
 }
 
+/* ===== SECCIONES ===== */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 50px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* ===== LISTAS ===== */
+.capitulos-list,
 .personaje-list {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
 }
 
+/* ===== TARJETAS ===== */
+.capitulo,
 .personaje {
-  width: 300px;
-  text-align: center;
+  background-color: #FAF8F5;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
+.capitulo:hover,
+.personaje:hover {
+  transform: translateY(-6px);
+}
+
+.capitulo img,
 .personaje img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
 }
 
+.capitulo h3,
 .personaje h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin: 15px;
 }
 
+.capitulo p,
 .personaje p {
-  color: #ccc;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0 15px 20px;
 }
